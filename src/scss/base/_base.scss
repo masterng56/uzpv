@@ -1,9 +1,62 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700);
-
+/* BASE */
 html {
   scroll-behavior: smooth; //плавная прокрутка по якорным ссылкам
 }
 
+html,
 body {
-  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: var(--white);
+  background-color: var(--bluedark);
+
+}
+
+h1 {
+  font-family: var(--measure);
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--roboto);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--limklight);
+}
+
+.footer {
+  margin-top: auto;
 }
