@@ -1,0 +1,20 @@
+.management_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.management_item {
+  border-bottom: 1px solid var(--disabled);
+}
+
+.management_header {
+  color: var(--bluelight);
+  line-height: 130%;
+}
+
+.management_text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}

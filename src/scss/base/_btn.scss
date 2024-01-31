@@ -1,0 +1,46 @@
+.btn {
+  font-family: var(--roboto);
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.btn_big {
+  padding: 22px 202px;
+}
+
+.btn_small {
+  width: 232px;
+  height: 44px;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn_white {
+  background-color: var(--white);
+  color: var(--bluedark);
+}
+
+.btn_border {
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--bluelight);
+  border: none;
+}
+
+.btn:active {
+  background-color: var(--disabled);
+  color: var(--white);
+}
+
+.btn_disabled {
+  border: 1px solid var(--disabled);
+  color: var(--disabled);
+}

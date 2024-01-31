@@ -1,0 +1,14 @@
+.news_wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.news .title {
+  margin-bottom: 60px;
+}
+
+.news_item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}

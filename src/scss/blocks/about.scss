@@ -1,0 +1,17 @@
+.about_row {
+  display: flex;
+  column-gap: 20px;
+}
+
+.about_item:nth-child(1) {
+  flex-grow: 1;
+}
+
+.about_item_num {
+  font-family: Measure;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -3px;
+}
