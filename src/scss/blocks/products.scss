@@ -1,0 +1,25 @@
+.products {
+  margin-top: 60px;
+}
+
+.products_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-rows: 1fr;
+}
+
+.products_title {
+  margin-bottom: calc(100% - 24px);
+}
+
+.products_item:nth-child(1) {
+  align-self: self-end;
+}
+
+.products_item:nth-child(2) {
+  align-self: self-end;
+}
+
+.product_text {
+  margin-top: 10px;
+}

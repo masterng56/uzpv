@@ -3,6 +3,23 @@
   height: 580px;
 }
 
+.hero_title {
+  margin-top: 318px;
+}
+
 .hero_description {
   font-size: 24px;
+  max-width: 484px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.hero_wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.heroa_text {
+  grid-column: 2/5;
 }
