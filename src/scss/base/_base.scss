@@ -27,7 +27,11 @@ body {
 }
 
 section {
-  margin-bottom: 120px;
+  margin-top: 120px;
+}
+
+section:nth-child(1){
+  margin-top: 0;
 }
 
 h1,
