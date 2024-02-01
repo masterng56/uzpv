@@ -39,6 +39,11 @@ h1,
   line-height: 100%;
   letter-spacing: -3px;
   color: var(--white);
+  text-transform: uppercase;
+}
+
+.title {
+  text-transform: none;
 }
 
 h2 {

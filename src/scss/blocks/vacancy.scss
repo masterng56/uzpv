@@ -1,7 +1,27 @@
+.vacancy {
+  background-image: url(../img/vacancy/vacancy.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 189px;
+  height: 500px;
+}
+
+.vacancy .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.vacancy_wrapper {
+  grid-column: 3/6;
+}
+
 .vacancy .title {
   text-transform: none;
 }
 
-.vacancy_wrapper {
-  background-image: url(../img/vacancy/vacancy.jpg);
+.vacancy_description {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 24px;
+
 }
