@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  margin-top: 20px;
 }
 
 .certificates_row {
@@ -29,8 +30,11 @@
   border: 1px solid var(--disabled);
 }
 
-.certificates .btn {
 
-  // align-self: flex-end;
-  margin-top: auto;
+.certificates_text {
+  margin-bottom: auto;
+}
+
+.certificates .btn {
+  margin-top: 30px;
 }
