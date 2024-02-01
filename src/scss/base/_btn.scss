@@ -4,10 +4,13 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  display: block;
 }
 
 .btn_big {
-  padding: 22px 202px;
+  padding: 22px;
+  width: 484px;
+  height: 60px;
 }
 
 .btn_small {
