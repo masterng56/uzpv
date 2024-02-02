@@ -1,29 +1,29 @@
 input {
-  display: flex;
-  height: 50px;
-  padding: 12px;
+  // display: flex;
+  // height: 50px;
+  // padding: 12px;
   // flex-direction: column;
   // justify-content: center;
   // align-items: flex-start;
   // align-self: stretch;
-  border-radius: 5px;
-  border: 1px solid var(--disabled);
-  outline: var(--bluelight) solid 1px;
+  // border-radius: 5px;
+  // border: 1px solid var(--disabled);
+  // outline: var(--bluelight) solid 1px;
 }
 
 input:active {
-  border: 1px solid var(--white);
+  // border: 1px solid var(--white);
 }
 
 textarea {
-  border-radius: 5px;
-  border: 1px solid var(--disabled);
+  // border-radius: 5px;
+  // border: 1px solid var(--disabled);
 }
 
 input::placeholder {
-  color: var(--white);
+  color: var(--grey);
 }
 
-.error {
-  border: 1px solid var(--yellow);
+textarea::placeholder {
+  color: var(--grey);
 }
