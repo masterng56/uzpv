@@ -35,6 +35,10 @@
 }
 
 .btn:hover {
+  color: var(--bluedark);
+}
+
+.btn:hover {
   background-color: var(--bluelight);
   border: none;
 }
