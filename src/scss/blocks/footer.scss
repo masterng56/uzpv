@@ -59,6 +59,9 @@
 }
 
 .footer a:hover {
-  color: var(--disabled);
+  color: var(--bluelight);
+}
 
+.footer a:active {
+  color: var(--disabled);
 }

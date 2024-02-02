@@ -73,6 +73,10 @@ a:hover {
   color: var(--disabled);
 }
 
+a:active {
+  color: var(--bluedark);
+}
+
 .footer {
   margin-top: auto;
 }
