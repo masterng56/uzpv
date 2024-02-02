@@ -1,10 +1,21 @@
 .hero {
-  background-image: url('../img/hero-image-full.jpg');
+  background-image: url('../img/hero/hero-desktop.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(180deg, rgba(47, 65, 87, 0.60) 0%, #2F4157 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover no-repeat, url(<path-to-image>), lightgray 0px -186.283px / 100% 221.453% no-repeat, url(<path-to-image>), lightgray 50% / cover no-repeat;
   height: 580px;
   margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-image: url('../img/hero/hero-tablet.png');
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('../img/hero/hero-mobile.png');
+  }
 }
 
 .hero_title {
