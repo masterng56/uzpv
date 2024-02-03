@@ -6,10 +6,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
   grid-template-rows: 1fr;
+  column-gap: 20px;
 }
 
 .products_title {
-  margin-bottom: calc(100% - 24px);
+  margin-bottom: -24px;
 }
 
 .products_item:nth-child(1) {

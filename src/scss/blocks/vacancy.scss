@@ -1,9 +1,14 @@
 .vacancy {
   background-image: url(../img/vacancy/vacancy.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-size: cover;
   padding-top: 189px;
-  // height: 560px;
+}
+
+@media (max-width: 1024px) {
+  .vacancy {
+    background-image: url(../img/vacancy/vacancy2.jpg);
+  }
 }
 
 .vacancy .container {

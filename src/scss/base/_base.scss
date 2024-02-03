@@ -42,6 +42,14 @@ h1,
   text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+
+  h1,
+  .title {
+    font-size: 77px;
+  }
+}
+
 .title {
   text-transform: none;
 }
@@ -79,20 +87,4 @@ a:active {
 
 .footer {
   margin-top: auto;
-}
-
-.display_none {
-  display: none;
-}
-
-.display_dlock {
-  display: block;
-}
-
-.display_flex {
-  display: flex;
-}
-
-.display_grid {
-  display: grid;
 }

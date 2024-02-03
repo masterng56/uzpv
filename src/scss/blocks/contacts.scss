@@ -30,6 +30,17 @@
   grid-row: 2/3;
 }
 
+@media (max-width: 1024px) {
+  .contacts_item:nth-child(4) {
+    grid-column: 3/6;
+    width: 81%;
+  }
+
+  .tel_home {
+    display: block;
+  }
+}
+
 .tel_link {
   font-family: Measure;
   font-size: 44px;
@@ -74,14 +85,9 @@
   flex-direction: column;
   height: 58px;
   padding: 8px;
-  border: 1px solid var(--white);
+  border: 1px solid var(--disabled);
   border-radius: 5px;
   justify-content: center;
-}
-
-input[type="number"].form_input {
-  appearance: none;
-  margin: 0;
 }
 
 .form_label:nth-child(3) {
@@ -101,4 +107,8 @@ input[type="number"].form_input {
 .error {
   border: 1px solid var(--yellow);
   color: var(--yellow);
+}
+
+.form_input {
+  color: var(--white);
 }
