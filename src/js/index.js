@@ -34,16 +34,19 @@ const swiper = new Swiper('.swiper', {
 
 
 window.addEventListener('load', function () {
+	// menu button
 	const menubutton = document.querySelector('.menu_button');
 	const topnavListWrapper = this.document.querySelector('.topnav_list_wrapper')
+
 	menubutton.addEventListener('click', function (e) {
 		if (topnavListWrapper.classList.contains('display_flex')) {
 			topnavListWrapper.classList.remove('display_flex');
+			menubutton.classList.remove('active');
 		}
 		else {
 			topnavListWrapper.classList.add('display_flex');
+			menubutton.classList.add('active');
 		}
-
 	});
 });
 

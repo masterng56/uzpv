@@ -12,21 +12,39 @@
 }
 
 .vacancy .container {
+  // display: grid;
+  // grid-template-columns: repeat(5, 1fr);
+}
+
+.vacancy_wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.vacancy_wrapper {
-  grid-column: 3/6;
-}
-
 .vacancy .title {
+  grid-column: 3/6;
   text-transform: none;
 }
 
 .vacancy_description {
+  grid-column: 3/6;
   margin-top: 30px;
   margin-bottom: 40px;
   font-size: 24px;
 
+}
+
+.btn_vacancy_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.btn_vacancy {
+  grid-column: 3/5;
+}
+
+@media (max-width: 768px) {
+  .btn_vacancy {
+    grid-column: 3/6;
+  }
 }

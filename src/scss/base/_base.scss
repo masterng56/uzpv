@@ -1,6 +1,7 @@
 /* BASE */
 html {
   scroll-behavior: smooth; //плавная прокрутка по якорным ссылкам
+  font-size: 16px;
 }
 
 html,
@@ -47,6 +48,26 @@ h1,
   h1,
   .title {
     font-size: 77px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  h1,
+  .title {
+    font-size: 58px;
+  }
+
+  section {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h1,
+  .title {
+    font-size: 50px;
   }
 }
 
