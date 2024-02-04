@@ -29,3 +29,18 @@
 .address_map {
   margin-top: 40px;
 }
+
+@media (max-width:768px) {
+  .address_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .address_wrapper .title {
+    grid-column: 1/2;
+  }
+
+  .address_item {
+    grid-column: 2/4;
+  }
+
+}

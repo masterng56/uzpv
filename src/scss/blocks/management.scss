@@ -27,5 +27,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+}
+
+@media (max-width: 768px) {
+  .management_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .management_items {
+    grid-column: 2/4;
+  }
 
 }

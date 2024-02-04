@@ -71,4 +71,16 @@
     grid-column: 2/4;
     grid-row: 1/2;
   }
+
+  .title_bottom {
+    margin-bottom: -30px;
+  }
+
+  .btn_news_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn_news {
+    grid-column: 2/4;
+  }
 }
