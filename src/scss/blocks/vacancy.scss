@@ -59,3 +59,14 @@
     display: flex;
   }
 }
+
+@media (max-width: 360px) {
+  .vacancy {
+    background-image: url(../img/vacancy/vacancy-360.jpg);
+    padding-top: 258px;
+  }
+
+  .vacancy_description {
+    line-height: 130%;
+  }
+}

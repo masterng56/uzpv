@@ -212,3 +212,15 @@
     width: 100%;
   }
 }
+
+@media (max-width: 360px) {
+
+  .contacts_item:nth-child(3) .tel_link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tel_home {
+    margin-left: 0;
+  }
+}
