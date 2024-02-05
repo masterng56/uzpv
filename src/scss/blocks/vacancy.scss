@@ -48,3 +48,14 @@
     grid-column: 3/6;
   }
 }
+
+@media (max-width: 480px) {
+  .vacancy_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn_vacancy_wrapper {
+    display: flex;
+  }
+}

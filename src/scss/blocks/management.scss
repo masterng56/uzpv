@@ -39,3 +39,17 @@
   }
 
 }
+
+@media (max-width: 480px) {
+  .management_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .management_wrapper h2 {
+    margin-bottom: 20px;
+  }
+
+
+
+}

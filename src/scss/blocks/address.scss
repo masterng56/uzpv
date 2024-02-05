@@ -44,3 +44,20 @@
   }
 
 }
+
+@media (max-width:480px) {
+  .address_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .address_wrapper .title {
+    grid-column: 1/2;
+  }
+
+  .address_item {
+    grid-column: 2/4;
+  }
+
+}

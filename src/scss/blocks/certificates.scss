@@ -16,12 +16,12 @@
 }
 
 // .certificates_row:nth-child(2) {
-  //   grid-template-columns: 1.5fr 2fr 1.5fr;
-  // }
+//   grid-template-columns: 1.5fr 2fr 1.5fr;
+// }
 
-  // .certificates_row:nth-child(3) {
-  //   grid-template-columns: 1.5fr 1.5fr 2fr;
-  // }
+// .certificates_row:nth-child(3) {
+//   grid-template-columns: 1.5fr 1.5fr 2fr;
+// }
 
 .certificates_item {
   display: flex;
@@ -59,4 +59,14 @@
     grid-column: 2/3;
     grid-row: 2/3;
   }
+}
+
+@media (max-width: 480px) {
+
+  .certificates_row {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }

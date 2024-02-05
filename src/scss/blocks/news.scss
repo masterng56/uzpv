@@ -84,3 +84,27 @@
     grid-column: 2/4;
   }
 }
+
+@media (max-width: 480px) {
+  .news_title {
+    text-indent: 0;
+  }
+
+  .title_bottom {
+    margin-bottom: 20px;
+  }
+
+  .news_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .btn_news_wrapper {
+    display: flex;
+  }
+
+  .btn_news {
+    width: 100%;
+  }
+}
