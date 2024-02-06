@@ -1,0 +1,34 @@
+.conditions_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.conditions_item {
+  border: 1px solid var(--bisabled, #63758B);
+  padding: 16px;
+  width: 30%;
+}
+
+@media (max-width: 1024px) {
+  .conditions_item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .conditions_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conditions_item {
+    width: 100%;
+  }
+}
+
+.conditions_text {
+  font-size: 24px;
+  line-height: 130%;
+}

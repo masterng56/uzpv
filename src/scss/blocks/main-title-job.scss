@@ -1,0 +1,29 @@
+.main_title {
+  margin-top: 40px;
+}
+
+.main_title h1 {
+  margin-top: 40px;
+
+}
+
+@media (max-width: 480px) {
+  .main_title h1 {
+    text-align-last: left;
+  }
+}
+
+.breadcrumbs_list {
+  display: flex;
+}
+
+.breadcrumbs_list li+li:before {
+  content: "\\";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.bredcrumbs_link {
+  color: var(--white);
+  text-transform: uppercase;
+}
