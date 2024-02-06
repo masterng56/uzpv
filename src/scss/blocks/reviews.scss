@@ -1,0 +1,11 @@
+.button_prev,
+.button_next {
+  border: 1px solid var(--disabled);
+  padding: 14px 40px;
+  cursor: pointer;
+}
+
+.reviews_button {
+  display: flex;
+  column-gap: 20px;
+}
