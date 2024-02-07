@@ -22,9 +22,7 @@ window.addEventListener('load', function () {
 			topnavListWrapper.classList.add('display_flex');
 			menubutton.classList.add('active');
 		}
-	}
-
-	);
+	});
 
 	// const swiper = new Swiper('.rewiews_slider', {
 	// 	// Optional parameters
@@ -57,20 +55,20 @@ window.addEventListener('load', function () {
 
 	var swiper = new Swiper(".rewiews_slider", {
 		// autoHeight: true,
-		spaceBetween: 30,
+		spaceBetween: 150,
 		slidesPerView: 1,
 		slidesPerGroup: 1,
 		loop: true,
-		autoplay: {
-			delay: 5000,
-		},
+		// autoplay: {
+		// 	delay: 5000,
+		// },
 		pagination: {
 			currentClass: ".current_num",
 			totalClass: ".total_num",
 			el: ".slider_pagination",
 			type: "fraction",
 		},
-		pagination: false,
+		// pagination: false,
 		navigation: {
 			nextEl: ".button_next",
 			prevEl: ".button_prev",

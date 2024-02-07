@@ -30,10 +30,10 @@
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .about_row2 {
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .about_item:nth-child(2) {
