@@ -1,6 +1,6 @@
 .conditions_wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 40px;
 }
@@ -8,16 +8,17 @@
 .conditions_item {
   border: 1px solid var(--bisabled, #63758B);
   padding: 16px;
-  width: 32%;
+
 }
 
 @media (max-width: 1024px) {
-  .conditions_item {
-    width: 48%;
+  .conditions_wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .conditions_wrapper {
     display: flex;
     flex-direction: column;
