@@ -54,29 +54,30 @@ window.addEventListener('load', function () {
 
 
 	var swiper = new Swiper(".rewiews_slider", {
-		// autoHeight: true,
 		spaceBetween: 150,
 		slidesPerView: 1,
 		slidesPerGroup: 1,
 		loop: true,
-		// autoplay: {
-		// 	delay: 5000,
-		// },
+		allowTouchMove: true,
 		pagination: {
 			currentClass: ".current_num",
 			totalClass: ".total_num",
 			el: ".slider_pagination",
 			type: "fraction",
 		},
+		// autoHeight: true,
+		// autoplay: {
+		// 	delay: 5000,
+		// },
 		// pagination: false,
 		navigation: {
 			nextEl: ".button_next",
 			prevEl: ".button_prev",
 		},
+
 		breakpoints: {
 			768: {
 				slidesPerView: 1,
-
 			},
 
 		}
