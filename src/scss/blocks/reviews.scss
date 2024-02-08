@@ -166,3 +166,13 @@
     padding: 0;
   }
 }
+
+@media (min-width: 320px) {
+  .swiper-pagination.slider_pagination {
+    top: 487px;
+    left: 38%;
+    width: auto;
+    height: 44px;
+    padding: 0;
+  }
+}
