@@ -24,35 +24,6 @@ window.addEventListener('load', function () {
 		}
 	});
 
-	// const swiper = new Swiper('.rewiews_slider', {
-	// 	// Optional parameters
-	// 	direction: 'vertical',
-	// 	loop: true,
-
-	// 	// If we need pagination
-	// 	// pagination: {
-	// 	// 	el: '.swiper-pagination',
-	// 	// }
-
-	// 	// ,
-
-	// 	// Navigation arrows
-	// 	navigation: {
-	// 		nextEl: '.button_next',
-	// 		prevEl: '.button_prev',
-	// 	}
-
-	// 	,
-
-	// 	// And if we need scrollbar
-	// 	// scrollbar: {
-	// 	// 	el: '.swiper-scrollbar',
-	// 	// }
-
-	// 	// ,
-	// });
-
-
 	var swiper = new Swiper(".rewiews_slider", {
 		spaceBetween: 150,
 		slidesPerView: 1,

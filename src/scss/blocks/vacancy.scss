@@ -1,19 +1,8 @@
-.vacancy {
-  background-image: url(../img/vacancy/vacancy.jpg);
+.vacancy .container {
+  background-image: url(../img/vacancy/bg_home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 189px;
-}
-
-@media (max-width: 1024px) {
-  .vacancy {
-    background-image: url(../img/vacancy/vacancy2.jpg);
-  }
-}
-
-.vacancy .container {
-  // display: grid;
-  // grid-template-columns: repeat(5, 1fr);
 }
 
 .vacancy_wrapper {
