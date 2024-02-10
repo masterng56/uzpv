@@ -21,7 +21,7 @@
   margin-top: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .process_items {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;

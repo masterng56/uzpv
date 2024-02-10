@@ -8,18 +8,22 @@
   text-indent: 40%;
 }
 
-.reviews_wrapper .title {}
+
 
 .rewiews_slider.swiper {
   margin-left: 40%;
   margin-top: 60px;
 }
 
+.slide_text {
+  max-width: 484px;
+}
+
 .swiper-pagination.slider_pagination {
   display: flex;
   // justify-content: start;
   margin-left: 40%;
-  min-width: 60%;
+  // min-width: 484px;
 }
 
 .reviews_button {
@@ -49,6 +53,7 @@
   border: 1px solid var(--disabled);
   height: 44px;
   cursor: pointer;
+  width: 126px;
 }
 
 .swiper-pagination.slider_pagination {
@@ -98,18 +103,46 @@
   }
 }
 
-
-
 @media (max-width: 1024px) {}
 
 @media (max-width: 576px) {
+  .vacancyjob_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .reviews_title {
+    margin-bottom: 0;
+  }
+
+  .reviews_wrapper .title {
+    text-indent: 0;
+    margin-top: 20px;
+  }
+
+  .btn_vacancyjob_wrapper {
+    display: flex;
+  }
+
+  .rewiews_slider.swiper {
+    margin-left: 0;
+  }
 
   .slider_pagination {
     font-size: 44px;
   }
 
-  .reviews_button {}
+  .swiper-pagination.slider_pagination {
+    margin-left: 0;
+    justify-content: center;
+    font-size: 44px;
+  }
+
+  .reviews_button {
+    margin-left: 0;
+    justify-content: space-between;
+
+  }
 
   .button_prev {}
 

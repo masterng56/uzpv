@@ -1,4 +1,4 @@
-.sendreviews {
+.sendreviews .container {
   background-image: url(../img/sendreviews/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +22,7 @@
   line-height: 130%;
   margin-top: 40px;
   margin-bottom: 40px;
+  max-width: 484px;
 }
 
 .btn_sendreviews_wrapper {
@@ -31,4 +32,48 @@
 
 .btn_sendreviews {
   grid-column: 3/5;
+}
+
+@media (max-width: 768px) {
+  .sendreviews .container {
+    background-image: none;
+  }
+
+  .sendreviews {
+    background-image: url(../img/sendreviews/768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sendreviews_wrapper .title {
+    margin-top: 274px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .sendreviews {
+    background-image: url(../img/sendreviews/480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sendreviews_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sendreviews_wrapper .title {
+    margin-top: 289px;
+  }
+
+  .btn_sendreviews_wrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  .sendreviews_wrapper .title {
+    margin-top: 258px;
+  }
 }

@@ -1,4 +1,5 @@
-.vacancyjob {
+// vacancyjob
+.vacancyjob .container {
   background-image: url(../img/vacancy/vacancy-job.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,7 +11,6 @@
 }
 
 .vacancyjob_wrapper .title {
-
   margin-top: 307px;
   grid-column: 3 / 6;
 }
@@ -23,6 +23,7 @@
   line-height: 130%;
   margin-top: 30px;
   margin-bottom: 60px;
+  max-width: 484px;
 }
 
 .btn_vacancyjob_wrapper {
@@ -35,7 +36,45 @@
 }
 
 @media (max-width:768px) {
+  .vacancyjob .container {
+    background-image: none;
+  }
+
+  .vacancyjob {
+    background-image: url(../img/vacancyjob/768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .vacancyjob_wrapper .title {
+    margin-top: 332px;
+  }
+
   .btn_vacancyjob {
     grid-column: 3 / 6;
+  }
+}
+
+@media (max-width:576px) {
+  .vacancyjob {
+    background-image: url(../img/vacancyjob/480.jpg);
+  }
+
+  .vacancyjob_wrapper .title {
+    margin-top: 339px;
+  }
+
+  .btn_vacancyjob {
+    grid-column: 3 / 6;
+  }
+}
+
+@media (max-width:360px) {
+  .vacancyjob {
+    background-image: url(../img/vacancyjob/360.jpg);
+  }
+
+  .vacancyjob_wrapper .title {
+    margin-top: 258px;
   }
 }
