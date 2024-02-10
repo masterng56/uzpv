@@ -27,10 +27,7 @@
   min-width: 60%;
 }
 
-
 .rewiews_slider_wrapper {}
-
-
 
 .reviews_button {
   display: flex;
@@ -38,19 +35,6 @@
   margin-top: 30px;
 
 }
-
-// .swiper-pagination.slider_pagination {
-//   position: absolute;
-//   top: 45%;
-//   left: 23%;
-//   height: 200px;
-//   width: 209px;
-//   background-color: var(--bluedark);
-//   padding-top: 100px;
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   z-index: 100000;
-// }
 
 .swiper-slide.reviews_slide {
   display: flex;
@@ -75,6 +59,31 @@
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -3px;
+}
+
+.stars svg {
+  fill: var(--disabled);
+  stroke: var(--disabled);
+}
+
+.stars svg:nth-child(1) {
+  fill: var(--bluelight);
+  stroke: var(--bluelight);
+}
+
+.stars svg:nth-child(2) {
+  fill: var(--bluelight);
+  stroke: var(--bluelight);
+}
+
+.stars svg:nth-child(3) {
+  fill: var(--bluelight);
+  stroke: var(--bluelight);
+}
+
+.stars svg:nth-child(4) {
+  fill: var(--bluelight);
+  stroke: var(--bluelight);
 }
 
 @media (min-width:768px) {
@@ -105,74 +114,4 @@
   .button_prev {}
 
   .button_next {}
-
 }
-
-
-// @media (min-width: 1024px) and (max-width: 1279.98px) {
-//   .swiper-pagination.slider_pagination {
-//     top: 42%;
-//     left: 19%;
-//     width: 209px;
-//   }
-// }
-
-// @media (min-width: 991px) and (max-width: 1023.98px) {
-//   .swiper-pagination.slider_pagination {
-//     top: 385px;
-//     left: 45%;
-//     width: auto;
-//     height: 44px;
-//     padding: 0;
-//   }
-// }
-
-// @media (min-width: 768px) and (max-width: 990.98px) {
-//   .swiper-pagination.slider_pagination {
-//     top: 258px;
-//     left: 22%;
-//     width: auto;
-//     height: 44px;
-//     padding: 0;
-//   }
-// }
-
-// @media (min-width: 576px) and (max-width: 767.98px) {
-//   .swiper-pagination.slider_pagination {
-//     top: 368px;
-//     left: 44%;
-//     width: auto;
-//     height: 44px;
-//     padding: 0;
-//   }
-// }
-
-// @media (min-width: 480px) and (max-width: 575.98px) {
-//   .swiper-pagination.slider_pagination {
-//     top: 374px;
-//     left: 42%;
-//     width: auto;
-//     height: 44px;
-//     padding: 0;
-//   }
-// }
-
-// @media (min-width: 360px) and (max-width: 479.98px) {
-//   .swiper-pagination.slider_pagination {
-//     top: 466px;
-//     left: 39%;
-//     width: auto;
-//     height: 44px;
-//     padding: 0;
-//   }
-// }
-
-// @media (max-width: 320px) {
-//   .swiper-pagination.slider_pagination {
-//     top: 484px;
-//     left: 38%;
-//     width: auto;
-//     height: 44px;
-//     padding: 0;
-//   }
-// }

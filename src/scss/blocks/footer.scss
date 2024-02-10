@@ -30,6 +30,10 @@
   flex-direction: column;
 }
 
+.footer_link {
+  text-transform: uppercase;
+}
+
 .footer_bottom {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

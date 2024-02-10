@@ -1,5 +1,6 @@
 .gallery img {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -47,7 +48,7 @@
 
 .gallery_item:nth-child(6) {
   grid-column: 5/6;
-  grid-row: 3/5;
+  grid-row: 4/5;
 }
 
 .gallery_item:nth-child(7) {
@@ -65,7 +66,7 @@
   grid-row: 5/7;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .gallery .title {
     position: inherit;
   }

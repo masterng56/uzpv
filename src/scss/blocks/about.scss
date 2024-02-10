@@ -34,6 +34,7 @@
   .about_row2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
   }
 
   .about_item:nth-child(2) {
@@ -53,7 +54,7 @@
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .about_row1 {
     display: flex;
     flex-direction: column;
@@ -83,6 +84,4 @@
   .about_item:nth-child(1) {
     order: 3;
   }
-
-
 }
