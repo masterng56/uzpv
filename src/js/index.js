@@ -5,8 +5,6 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 
-
-
 window.addEventListener('load', function () {
 	// menu button
 	const menubutton = document.querySelector('.menu_button');
@@ -54,6 +52,38 @@ window.addEventListener('load', function () {
 		}
 	});
 
-}
+	// accordion
+	const accordion = document.querySelectorAll('.accordion');
+	document.querySelectorAll('.accordion').forEach((el) =>{
+		el.addEventListener('click', function () {
+			
+			if (this.classList.contains('active')) {
+				this.classList.remove('active');
+			} else {
+				for (el of accordion) {
+					el.classList.remove('active');
+				}
+				this.classList.add('active');
+			}
 
-);
+		});
+	});
+
+	document.querySelectorAll('.accordion').forEach((el) => {
+		el.addEventListener('click', () => {
+
+			let content = el.nextElementSibling;
+
+			if (content.style.maxHeight) {
+				content.classList.remove('active');
+				document.querySelectorAll('.accordion_content').forEach((el) => el.style.maxHeight = null)
+			} else {
+				content.classList.add('active')
+				document.querySelectorAll('.accordion_content').forEach((el) => el.style.maxHeight = null)
+				content.style.maxHeight = content.scrollHeight + 'px'
+			}
+
+		});
+	});
+
+});
