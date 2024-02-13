@@ -7,7 +7,7 @@ row-gap: 40px;
   max-width: 100%;
   width: 100%;
 }
-.news_item{
+.news_page_item{
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 20px;
@@ -32,7 +32,7 @@ row-gap: 40px;
 }
 @media (max-width:768px) {
 
-  .news_item{
+  .news_page_item{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -43,7 +43,7 @@ row-gap: 40px;
   }
 }
 @media (max-width:576px) {
-  .news_item{
+  .news_page_item{
     grid-template-columns: 1fr;
     row-gap: 10px;
   }
