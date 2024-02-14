@@ -1,0 +1,16 @@
+.form_star{
+  margin-top: 6px;
+}
+.form_star svg{
+  fill: var(--bluelight);
+}
+
+.form_item_reviews{
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+}
+
+.reviews_textarea{
+  height: 138px;
+}
