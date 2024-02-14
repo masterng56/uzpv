@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
 			el: ".slider_pagination",
 			type: "fraction",
 		},
-		// autoHeight: true,
+		autoHeight: true,
 		// autoplay: {
 		// 	delay: 5000,
 		// },
