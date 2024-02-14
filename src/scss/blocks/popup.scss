@@ -193,7 +193,10 @@
   }
 
   .btn_close {
-    display: none;
+    background-image: url(../img/popup/btn-clouse-black.svg);
+    position: static;
+    border: 1px solid var(--disabled);
+    margin-left: auto;
   }
 
   .form_item_wrapper2 {
@@ -209,7 +212,7 @@
   }
 
   .btn_close {
-    display: none;
+    // display: none;
   }
 
 }
