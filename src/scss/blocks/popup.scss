@@ -213,6 +213,7 @@ textarea.contact_form_input:focus-visible {
     height: auto;
     padding: 20px;
   }
+}
 
   .btn_close {
     background-image: url(../img/popup/btn-clouse-black.svg);
@@ -225,17 +226,12 @@ textarea.contact_form_input:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 0;
-
   }
 
   .experience_wrapper {
     display: flex;
     justify-content: space-between;
   }
-
-  .experience_text,
-  .label_wrapper {}
-}
 
 @media (max-width:479.98px) {
   .contact_form_amts {
