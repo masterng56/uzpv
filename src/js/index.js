@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
 			el: ".slider_pagination",
 			type: "fraction",
 		},
-		autoHeight: true,
+		
 		// autoplay: {
 		// 	delay: 5000,
 		// },
@@ -47,6 +47,7 @@ window.addEventListener('load', function () {
 		breakpoints: {
 			768: {
 				slidesPerView: 1,
+				autoHeight: true,
 			},
 
 		}
