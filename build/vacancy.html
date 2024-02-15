@@ -655,38 +655,63 @@
 
   <script src="./js/index.js"></script>
 </body>
-<div class="overlay">
+<div class="overlay popup_active">
   <div class="form_wrapper">
 
     <form class="contact_form_amts">
-      <span class="btn_close"></span>
-      <h2 class="form_title">Отклик на вакансию «Распределитель работ»</h2>
+      <div class="form_title_wrapper">
+        
+        <h2 class="form_title">Отклик на вакансию «Распределитель работ»</h2>
+        <span class="btn_close"></span>
+      </div>
       
-      <p class="res err"></p>
-      <input class="contact_form_input" type="text" placeholder="Ваше имя" name="name">
-      <input class="contact_form_input" type="text" placeholder="Ваша фамилия" name="lastname">
-      <input class="contact_form_input" type="text" placeholder="Ваше отчество" name="patronymic">
 
-      <div class="form_item_wrapper form_item_wrapper2">
-        <input class="contact_form_input" type="text" placeholder="Возраст" name="patronymic">
-        <input class="contact_form_input" type="text" placeholder="Ваш номер телефона" name="phone">
+      <div class="input_wrapper">
+        <label for="vacancy_name">Ваше имя
+          <input class="contact_form_input" id="vacancy_name" type="text" placeholder="Иван" name="name" autofocus>
+        </label>
+
+        <label for="vacancy_lastname">Ваша фамилия
+          <input class="contact_form_input" id="vacancy_lastname" type="text" placeholder="Иванов"
+            name="lastname">
+        </label>
+
+        <label for="">Ваше отчество
+          <input class="contact_form_input" id="vacancy_patronymic" type="text" placeholder="Иванович" name="patronymic">
+        </label>
+        <label for="">Возраст
+          <input class="contact_form_input" id="vacancy_age" type="text" placeholder="34" name="age">
+        </label>
+        <label for="">Ваша почта
+          <input class="contact_form_input" id="vacancy_email" type="text" placeholder="ivan@email.ru" name="email">
+        </label>
+        <label for="">Ваш номер телефона
+          <input class="contact_form_input" id="vacancy_phone" type="text" placeholder="+7 999 888-77-66" name="phone">
+        </label>
+        
+        <div class="experience_wrapper">
+          <p class="experience_text">Есть ли у вас опыт работы?</p>
+          <div class="label_wrapper">
+
+            <label class="checkcontainer">Да
+              <input type="radio" checked="checked" name="radio">
+              <span class="radiobtn"></span>
+            </label>
+
+            <label class="checkcontainer">Нет
+              <input type="radio" checked="" name="radio">
+              <span class="radiobtn"></span>
+            </label>
+
+          </div>
+        </div>
+
+
       </div>
 
       <div class="form_item_wrapper">
-        <p>Есть ли у вас опыт работы?</p>
-        <div class="label_wrapper">
 
-          <label class="checkcontainer">Да
-            <input type="radio" checked="checked" name="radio">
-            <span class="radiobtn"></span>
-          </label>
 
-          <label class="checkcontainer">Нет
-            <input type="radio" checked="" name="radio">
-            <span class="radiobtn"></span>
-          </label>
-
-        </div>
       </div>
 
       <p class="agreement_text">

@@ -193,9 +193,9 @@
   </div>
 </section>
 <div class="container btn_vacancyjob_wrapper">
-  <button class="btn btn_white btn_big btn_vacancyjob">
+  <a href="./vacancy.html" class="btn btn_white btn_big btn_vacancyjob">
     Смотреть вакансии
-  </button>
+  </a>
 </div>
   <section class="process">
   <div class="container">
@@ -462,8 +462,9 @@
       <h2 class="form_title">Оставьте свой отзыв о работе на заводе!</h2>
       
       <p class="res err"></p>
-      <input class="contact_form_input" type="text" placeholder="Ваше имя" name="name">
-      <input class="contact_form_input" type="text" placeholder="Ваша фамилия" name="lastname">
+      <label class="reviews_label" for="reviews_name">Ваше имя</label>
+      <input class="contact_form_input error" id="reviews_name" type="text" placeholder="Иван" name="name" autocomplete="off" autofocus>
+     
       <div class="form_item_reviews">
         <p>Ваша оценка пердприятию:</p>
         <div class="form_star">
@@ -484,8 +485,8 @@
             </svg>
         </div>
       </div>
-
-      <textarea class="contact_form_input reviews_textarea" placeholder="Ваш отзыв" name="" id="" ></textarea>
+      <label class="reviews_label" for="reviews_textarea">Ваш отзыв</label>
+      <textarea class="contact_form_input reviews_textarea" id="reviews_textarea" placeholder="Текст отзыва" name="reviews_textarea" autocomplete="off"></textarea>
 
       <p class="agreement_text">
         Нажимая кнопку «Отправить» я соглашаюсь с условиями Политики конфиденциальности
