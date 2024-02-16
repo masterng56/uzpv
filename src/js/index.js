@@ -8,8 +8,8 @@ import 'swiper/css/bundle';
 window.addEventListener('load', function () {
 	// menu button
 	const menubutton = document.querySelector('.menu_button');
-
 	const topnavListWrapper = this.document.querySelector('.topnav_list_wrapper')
+
 	menubutton.addEventListener('click', function () {
 		if (topnavListWrapper.classList.contains('display_flex')) {
 			topnavListWrapper.classList.remove('display_flex');
@@ -87,7 +87,9 @@ window.addEventListener('load', function () {
 		});
 	});
 
-	//POPUP
+	
+
+  //POPUP
 	let overlay = document.querySelector('.overlay');
 	let close = document.querySelector('.btn_close')
 
@@ -118,49 +120,27 @@ window.addEventListener('load', function () {
 	}
 
 
-	// MAP
+//кнопка показа карты
 	let addressMap = document.querySelector('.address_map');
 	let img = document.querySelector('.map_img');
 	let map = document.querySelector('.frame_map');
 
-	// addressMap.addEventListener('click', function (e) {
-	// 	console.log(e.target)
-	// 	if (! this.classList.contains('address_map')) {
-	// 		img.classList.remove('display_none')
-	// 		map.classList.remove('display_block')
-	// 		img.classList.add('display_block')
-	// 	}
-	// 	img.classList.add('display_none')
-		
-	// })
-
-
-//кнопка показа карты
-
-  
-  document.querySelector('.address_map').addEventListener("click", function(e) {
-    
-    // if ((e.target) == document.querySelector('.map_img')) 
-		e.preventDefault();
+	if(addressMap != null){
+		document.querySelector('.address_map').addEventListener("click", function(e) {
+			e.preventDefault();
+			img.classList.add('display_none');
+			map.classList.remove('display_none');
+			map.classList.add('display_block');
+		});
 	
-    img.classList.add('display_none');
-    map.classList.remove('display_none');
-    map.classList.add('display_block');
-    
-  });
+		document.addEventListener('mouseup', function (e) {
+			let active = document.querySelector('.btn_map');
+			if (e.target != addressMap) {
+				img.classList.remove('display_none');
+				map.classList.remove('display_block');
+				map.classList.add('display_none');
+			}
+		});
+	}
 
-  document.addEventListener('mouseup', function (e) {
-    let active = document.querySelector('.btn_map');
-    if (e.target != addressMap) {
-      img.classList.remove('display_none');
-      map.classList.remove('display_block');
-			map.classList.add('display_none');
-    }
-  });
-
-
-	// if (active.has(e.target).length === 0) {
-	// 	document.querySelector('.map_show').classList.remove('map_show_active');
-	// 	document.querySelector('.map_non').classList.remove('map_non_unactive');
-	// }
 });
