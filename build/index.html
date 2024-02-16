@@ -24,7 +24,7 @@
 						</g>
 					</svg></a>
 				<nav class="topnav">
-					<button class="menu_button" style="background-image: url(./img/menu/icon-lines.svg);"></button>
+					<button class="menu_button"></button>
 					<div class="topnav_list_wrapper">
 						<ul class="topnav_list list1">
 							<li class="topnav_item"><a href="./index.html#about" class="topnav_link">О заводe </a></li>
@@ -350,14 +350,29 @@
         </div>
       </div>
       <div class="contacts_item">
-        <form action="" class="feedback_form"><label class="form_label " for=""><input type="text" class="form_input"
-              id="contact_name" name="name" placeholder="Имя" autocomplete="off"></label><label class="form_label error"
-            for="">Поле заполнено не верно <input type="text" class="form_input" name="phone" placeholder="Телефон"
-              autocomplete="off"></label>
-          <div class="form_label"><textarea class="form_input" name="messsge" placeholder="Ваш вопрос" id=""
-              autocomplete="off"></textarea></div><button class="btn btn_big btn_white"
-            id="btn_contacts">Отправить</button>
-        </form>
+        <!-- feedback_form -->
+<form action="" class="feedback_form">
+
+  <label class="form_label">
+    Ваше имя
+    <input type="text" class="form_input error" id="contact_name" name="name" placeholder="Иван" autocomplete="off">
+  </label>
+
+  <label class="form_label" for="">
+    Ваш телефон
+    <input type="text" class="form_input" name="phone" placeholder="+7 999 888 77 66" autocomplete="off">
+  </label>
+
+  <div class="form_label">
+    ваше сообщение
+    <textarea class="form_input" name="messsge" placeholder="Ваш вопрос" autocomplete="off"></textarea>
+  </div>
+
+  <button class="btn btn_big btn_white" id="btn_contacts">Отправить
+  </button>
+
+</form>
+<!-- /feedback_form -->
       </div>
     </div>
   </div>

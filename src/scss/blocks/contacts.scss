@@ -1,3 +1,5 @@
+// CONTACTS
+
 .contacts_wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -79,11 +81,8 @@
 .form_label {
   display: flex;
   flex-direction: column;
-  height: 58px;
-  padding: 8px;
-  border: 1px solid var(--disabled);
-  border-radius: 5px;
   justify-content: center;
+  font-size: 12px;
 }
 
 .form_label:nth-child(3) {
@@ -95,12 +94,44 @@
   resize: none;
   outline: none;
 }
+.feedback_form input{
+  border: 1px solid var(--disabled);
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.feedback_form textarea{
+  border: 1px solid var(--disabled);
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.feedback_form input:focus {
+  border: 1px solid var(--bluelight);
+  }
+  
+  .feedback_form input::placeholder {
+  color: var(--disabled);
+  }
+  
+  .feedback_form textarea::placeholder {
+  color: var(--disabled);
+  }
+
+  .feedback_form textarea::placeholder{
+    color: var(--disabled);
+  }
+
+  .feedback_form textarea:focus{
+    border: 1px solid var(--bluelight);
+  }
 
 #btn_contacts {
   margin-top: 30px;
 }
 
-.error {
+.feedback_form .error {
   border: 1px solid var(--yellow);
   color: var(--yellow);
 }
