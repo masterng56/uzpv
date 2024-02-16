@@ -27,8 +27,27 @@
 }
 
 .address_map {
+  height: 500px;
   margin-top: 40px;
+  background-color: #EEEEEE;
 }
+
+.map_img{
+  height: 100%;
+}
+
+.frame_map{
+  height: 100%;
+}
+
+.map_img img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
 
 @media (max-width:768px) {
   .address_wrapper {

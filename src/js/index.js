@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
 			el: ".slider_pagination",
 			type: "fraction",
 		},
-		
+
 		// autoplay: {
 		// 	delay: 5000,
 		// },
@@ -103,14 +103,64 @@ window.addEventListener('load', function () {
 		});
 	});
 
-	close.addEventListener('click', function (e) {
-		overlay.classList.remove('popup_active');
-	});
-
-	overlay.addEventListener('click', function (e) {
-		if (e.target === overlay) {
+	if (close != null) {
+		close.addEventListener('click', function () {
 			overlay.classList.remove('popup_active');
-		}
-	});
+		});
+	}
 
+	if (overlay != null) {
+		overlay.addEventListener('click', function (e) {
+			if (e.target === overlay) {
+				overlay.classList.remove('popup_active');
+			}
+		});
+	}
+
+
+	// MAP
+	let addressMap = document.querySelector('.address_map');
+	let img = document.querySelector('.map_img');
+	let map = document.querySelector('.frame_map');
+
+	// addressMap.addEventListener('click', function (e) {
+	// 	console.log(e.target)
+	// 	if (! this.classList.contains('address_map')) {
+	// 		img.classList.remove('display_none')
+	// 		map.classList.remove('display_block')
+	// 		img.classList.add('display_block')
+	// 	}
+	// 	img.classList.add('display_none')
+		
+	// })
+
+
+//кнопка показа карты
+
+  
+  document.querySelector('.address_map').addEventListener("click", function(e) {
+    
+    // if ((e.target) == document.querySelector('.map_img')) 
+		e.preventDefault();
+	
+    img.classList.add('display_none');
+    map.classList.remove('display_none');
+    map.classList.add('display_block');
+    
+  });
+
+  document.addEventListener('mouseup', function (e) {
+    let active = document.querySelector('.btn_map');
+    if (e.target != addressMap) {
+      img.classList.remove('display_none');
+      map.classList.remove('display_block');
+			map.classList.add('display_none');
+    }
+  });
+
+
+	// if (active.has(e.target).length === 0) {
+	// 	document.querySelector('.map_show').classList.remove('map_show_active');
+	// 	document.querySelector('.map_non').classList.remove('map_non_unactive');
+	// }
 });
